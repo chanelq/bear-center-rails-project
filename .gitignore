@@ -1,2 +1,4 @@
 # DS store files should be ignored
 **.DS_Store
+
+tmp/cache**
