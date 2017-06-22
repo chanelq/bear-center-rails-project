@@ -33,3 +33,12 @@
 <br>
 
 <%= link_to 'New Order', new_order_path %>
+
+<!-- To show orders from 90 days ago:
+  now = Date.today
+  ninety_days_ago = (now -90)
+only show orders where order.created_at falls between range of now and ninety days ago -->
+
+<!-- To order list by Employee signup_date:
+create a hidden column that displays employee.signup_date
+sort table by this hidden column -->
