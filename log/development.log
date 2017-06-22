@@ -463,3 +463,78 @@ Processing by EmployeesController#index as HTML
 Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/employees" for 127.0.0.1 at 2017-06-22 12:41:12 -0700
+Processing by EmployeesController#index as HTML
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.2ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  Rendered employees/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2017-06-22 12:41:16 -0700
+Processing by OrdersController#index as HTML
+  Rendering orders/index.html.erb within layouts/application
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  Rendered orders/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 17ms (Views: 15.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2017-06-22 12:41:17 -0700
+Processing by OrdersController#new as HTML
+  Rendering orders/new.html.erb within layouts/application
+  [1m[36mEmployee Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "employees" LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" ORDER BY "employees"."name" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mEmployee Load (0.2ms)[0m  [1m[34mSELECT "employees".* FROM "employees" ORDER BY "employees"."name" ASC[0m
+  Rendered orders/_form.html.erb (5.3ms) [cache miss]
+  Rendered orders/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2017-06-22 12:41:41 -0700
+Processing by OrdersController#new as HTML
+  Rendering orders/new.html.erb within layouts/application
+  [1m[36mEmployee Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "employees" LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mEmployee Load (0.2ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" ORDER BY "employees"."name" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mEmployee Load (0.2ms)[0m  [1m[34mSELECT "employees".* FROM "employees" ORDER BY "employees"."name" ASC[0m
+  Rendered orders/_form.html.erb (4.3ms) [cache miss]
+  Rendered orders/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2017-06-22 12:42:04 -0700
+Processing by OrdersController#new as HTML
+  Rendering orders/new.html.erb within layouts/application
+  Rendered orders/_form.html.erb (1.8ms) [cache miss]
+  Rendered orders/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2017-06-22 12:42:11 -0700
+Processing by OrdersController#new as HTML
+  Rendering orders/new.html.erb within layouts/application
+  [1m[36mEmployee Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "employees" LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mEmployee Load (0.2ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" ORDER BY "employees"."name" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mEmployee Load (0.2ms)[0m  [1m[34mSELECT "employees".* FROM "employees" ORDER BY "employees"."name" ASC[0m
+  Rendered orders/_form.html.erb (3.9ms) [cache miss]
+  Rendered orders/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 21ms (Views: 18.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2017-06-22 12:43:38 -0700
+Processing by OrdersController#new as HTML
+  Rendering orders/new.html.erb within layouts/application
+  [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  Rendered orders/_form.html.erb (2.9ms) [cache miss]
+  Rendered orders/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2017-06-22 12:43:48 -0700
+Processing by OrdersController#new as HTML
+  Rendering orders/new.html.erb within layouts/application
+  [1m[36mEmployee Load (0.2ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  Rendered orders/_form.html.erb (3.4ms) [cache miss]
+  Rendered orders/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 21ms (Views: 18.8ms | ActiveRecord: 0.2ms)
+
+
