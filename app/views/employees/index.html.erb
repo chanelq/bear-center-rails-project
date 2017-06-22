@@ -6,7 +6,7 @@
   <thead>
     <tr>
       <th>Name</th>
-      <th>Average Total Price</th>
+      <th id="avg-total-price">Average Total Price</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -27,3 +27,13 @@
 <br>
 
 <%= link_to 'New Employee', new_employee_path %>
+
+<br>
+<br>
+<button type="button" onclick="alert('Insert jQuery Here');">Show Average Total Price</button>
+
+<!-- For 'Show Average Total Price' button:
+Add jQuery to select 'Average Total Price' table column from DOM (on page load, is hidden)
+When button is clicked, show the column
+Text of button is changed to 'Hide Average Total Price'
+When button is clicked, hide the column (display:none) -->
